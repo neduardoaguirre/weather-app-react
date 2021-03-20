@@ -24,7 +24,7 @@ nav .brand-logo {
 }
 
 .input-field label {
-  color: #f7f7f7;
+  color: #000000;
   padding: 0 5px !important;
 }
 
@@ -33,26 +33,26 @@ nav .brand-logo {
 }
 
 .input-field input[type=text]:focus+label {
-  color: #f7f7f7;
+  color: #000000;
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #000000;
 }
 
 input[type=text]:not(.browser-default) {
-  border-bottom: 1px solid white;
-  color: white;
+  border-bottom: 1px solid #000000;
+  color: #000000;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid white;
-  -webkit-box-shadow: 0 1px 0 0 white;
-  box-shadow: 0 1px 0 0 white;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: 0 1px 0 0 #000000;
+  box-shadow: 0 1px 0 0 #000000;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly])+label {
-  color: white;
+  color: #000000;
 }
 
 .container-form {
