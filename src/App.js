@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
+import axios from 'axios';
 import Header from './components/Header';
 import Form from './components/Form';
 import Weather from './components/Weather';
@@ -18,11 +19,10 @@ function App() {
   useEffect(() => {
     const callAPI = async () => {
       if (query) {
-        const API_KEY = 'a288c1e0234fb632313a1893f22c006c';
-        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`;
-        const req = await fetch(URL);
-        const res = await req.json();
-        setResponse(res);
+        const URL = `/.netlify/functions/getWeather?country=${country}&city=${city}`;
+        const response = await axios.get(URL);
+        const data = response.data;
+        setResponse(data);
         setQuery(false);
 
         if (response.cod === '404') {
