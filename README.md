@@ -30,7 +30,7 @@ git clone https://github.com/neduardoaguirre/weather-app-react.git
 ### Install npm dependencies
 
 ```sh
-cd pixabay-image-finder
+cd weather-app-react
 npm install
 ```
 
